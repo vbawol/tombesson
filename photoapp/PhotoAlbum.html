@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art by Tom Besson</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1><a href="../index.html" style="text-decoration: none; color: inherit;">ART BY TOM BESSON</a></h1>
+    </header>
+
+    <div class="controls">
+        <div class="filter-bar" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+            <select id="mediumFilter" onchange="applyFilters()">
+                <option value="all">All Mediums</option>
+                <option value="painting">Paintings</option>
+                <option value="drawing">Drawings</option>
+            </select>
+            <button onclick="resetFilter()" style="font-size: 0.8rem; padding: 5px 10px;">Reset All</button>
+        </div>
+
+        <!-- Histogram will be injected here -->
+        <div id="yearHistogram" class="year-histogram"></div>
+    </div>
+
+    <div id="gallery" class="gallery-grid">
+        <!-- Gallery items will be injected here -->
+    </div>
+
+    <footer>
+        <p>&copy; Tom Besson</p>
+        <p><a href="../index.html">Back to Main Page</a></p>
+    </footer>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <button class="lightbox-nav prev" onclick="changeImage(-1, event)">&#10094;</button>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+        <button class="lightbox-nav next" onclick="changeImage(1, event)">&#10095;</button>
+    </div>
+</div>
+
+<script>
+let allArtworks = [];
+let currentImageIndex = 0;
+let filteredArtworks = [];
+
+let currentYearFilter = 'all';
+let currentMediumFilter = 'all';
+
+function loadGallery() {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('HTTP error ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            allArtworks = data.artworks || data;
+            // Pre-calculate type for performance
+            allArtworks.forEach(art => {
+                art.type = getArtworkType(art.description);
+            });
+            
+            // Check for URL parameters
+            const params = new URLSearchParams(window.location.search);
+            const medium = params.get('medium');
+            if (medium) {
+                const select = document.getElementById('mediumFilter');
+                if (select && select.querySelector(`option[value="${medium}"]`)) {
+                    select.value = medium;
+                }
+            }
+            
+            buildHistogram();
+            applyFilters();
+        })
+        .catch(error => {
+            console.error('Error loading artworks:', error);
+            document.getElementById('gallery').innerHTML = '<p style="text-align:center; color: red;">Error loading gallery: ' + error.message + '</p>';
+        });
+}
+
+function getArtworkType(description) {
+    if (!description) return 'other';
+    const desc = description.toLowerCase();
+    if (desc.includes('oil') || desc.includes('acrylic') || desc.includes('canvas') || desc.includes('paint') || desc.includes('watercolor')) {
+        return 'painting';
+    }
+    if (desc.includes('pastel') || desc.includes('charcoal') || desc.includes('pencil') || desc.includes('ink') || desc.includes('paper') || desc.includes('drawing')) {
+        return 'drawing';
+    }
+    return 'other';
+}
+
+function buildHistogram() {
+    const histogram = document.getElementById('yearHistogram');
+    histogram.innerHTML = '';
+
+    // Group by year (respecting current medium filter)
+    const yearsMap = {};
+    
+    // Filter artworks by medium first for the histogram
+    const relevantArtworks = currentMediumFilter === 'all' 
+        ? allArtworks 
+        : allArtworks.filter(art => art.type === currentMediumFilter);
+
+    relevantArtworks.forEach(art => {
+        const y = art.year || 'Unknown';
+        if (!yearsMap[y]) yearsMap[y] = [];
+        yearsMap[y].push(art);
+    });
+
+    // Sort years descending
+    const sortedYears = Object.keys(yearsMap).sort().reverse();
+
+    sortedYears.forEach(year => {
+        const artworksInYear = yearsMap[year];
+        
+        const col = document.createElement('div');
+        col.className = 'year-column';
+        if (year === currentYearFilter) col.classList.add('active');
+        
+        col.onclick = () => {
+            currentYearFilter = (currentYearFilter === year) ? 'all' : year;
+            applyFilters();
+        };
+        col.dataset.year = year;
+
+        const stack = document.createElement('div');
+        stack.className = 'year-stack';
+
+        // Add mini thumbnails (limit to 20 to prevent huge stacks)
+        const maxThumbs = 20;
+        const step = Math.ceil(artworksInYear.length / maxThumbs);
+        
+        // Take a sample of images to represent the year
+        for (let i = 0; i < artworksInYear.length; i += step) {
+            const art = artworksInYear[i];
+            const img = document.createElement('img');
+            img.src = `../images/gallery/${art.image}`;
+            img.className = 'mini-thumb';
+            img.loading = 'lazy';
+            stack.appendChild(img);
+        }
+
+        const label = document.createElement('div');
+        label.className = 'year-label';
+        label.textContent = year;
+
+        col.appendChild(stack);
+        col.appendChild(label);
+        histogram.appendChild(col);
+    });
+}
+
+function resetFilter() {
+    currentYearFilter = 'all';
+    currentMediumFilter = 'all';
+    document.getElementById('mediumFilter').value = 'all';
+    applyFilters();
+}
+
+function applyFilters() {
+    currentMediumFilter = document.getElementById('mediumFilter').value;
+    
+    // Rebuild histogram to reflect medium filter
+    buildHistogram();
+
+    filteredArtworks = allArtworks.filter(art => {
+        const yearMatch = currentYearFilter === 'all' || (art.year || 'Unknown') === currentYearFilter;
+        const mediumMatch = currentMediumFilter === 'all' || art.type === currentMediumFilter;
+        return yearMatch && mediumMatch;
+    });
+    
+    renderGallery(filteredArtworks);
+}
+
+// Removed old filterGallery function as it is replaced by applyFilters
+
+
+function formatDescription(desc) {
+    if (!desc) return '';
+    return desc.replace(/([a-zA-Z])(\d)/g, '$1 $2');
+}
+
+function renderGallery(artworks) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = '';
+    
+    artworks.forEach((art, index) => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.innerHTML = `
+            <div class="image-container" onclick="openLightbox(${index})">
+                <img src="../images/gallery/${art.image}" alt="${art.title || 'Artwork'}" loading="lazy" onerror="this.parentElement.parentElement.style.display='none'">
+            </div>
+            <div class="info">
+                <h3>${art.title || ''}</h3>
+                <p>${formatDescription(art.description || '')}</p>
+                <div class="year">${art.year || ''}</div>
+            </div>
+        `;
+        gallery.appendChild(item);
+    });
+}
+
+function openLightbox(index) {
+    currentImageIndex = index;
+    updateLightbox();
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(event) {
+    if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+function changeImage(direction, event) {
+    event.stopPropagation();
+    currentImageIndex += direction;
+    if (currentImageIndex < 0) currentImageIndex = filteredArtworks.length - 1;
+    if (currentImageIndex >= filteredArtworks.length) currentImageIndex = 0;
+    updateLightbox();
+}
+
+function updateLightbox() {
+    const art = filteredArtworks[currentImageIndex];
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    
+    img.src = `../images/gallery/${art.image}`;
+    caption.innerHTML = `<strong>${art.title || ''}</strong><br>${formatDescription(art.description || '')}<br>${art.year || ''}`;
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    if (!document.getElementById('lightbox').classList.contains('active')) return;
+    
+    if (e.key === 'Escape') closeLightbox({target: {id: 'lightbox'}});
+    if (e.key === 'ArrowLeft') changeImage(-1, {stopPropagation: () => {}});
+    if (e.key === 'ArrowRight') changeImage(1, {stopPropagation: () => {}});
+});
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadGallery);
+} else {
+    loadGallery();
+}
+</script>
+
+</body>
+</html>

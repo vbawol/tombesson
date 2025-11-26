@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+cms/
+fix_paths.py
+restore_frontv2.py
+scrape_album.py
+fix_dimensions.py

@@ -1,0 +1,268 @@
+[26-Oct-2022 20:39:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[31-Oct-2022 19:15:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[12-Nov-2022 17:42:12 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Nov-2022 22:31:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Dec-2022 20:03:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[03-Jan-2023 15:37:17 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jan-2023 05:59:10 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[13-Jan-2023 01:52:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[06-Jun-2023 21:44:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[15-Jun-2023 11:43:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[26-Jul-2023 07:08:17 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[03-Aug-2023 11:26:31 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[03-Sep-2023 10:28:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[14-Sep-2023 03:37:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[24-Sep-2023 11:44:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Oct-2023 04:11:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[04-Dec-2023 05:01:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[19-Dec-2023 08:39:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[08-Jan-2024 08:43:54 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Feb-2024 01:18:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Feb-2024 20:04:47 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[31-Mar-2024 05:44:13 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-May-2024 10:57:31 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-May-2024 23:08:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[07-Jul-2024 05:50:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 18:45:24 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 18:45:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 18:45:36 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 18:49:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 18:51:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:12:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:12:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:12:56 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:13:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:13:36 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:47:36 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:47:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:47:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:47:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 21:47:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 23:40:18 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 23:40:47 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 23:40:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[09-Jul-2024 23:41:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jul-2024 00:17:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jul-2024 00:18:03 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jul-2024 00:18:03 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jul-2024 00:18:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Jul-2024 00:18:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Jul-2024 02:42:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Jul-2024 02:42:47 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Jul-2024 02:42:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Jul-2024 02:42:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Jul-2024 02:42:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[22-Sep-2024 03:17:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[17-Oct-2024 06:41:13 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[26-Oct-2024 16:34:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[28-Oct-2024 16:39:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[13-Nov-2024 23:52:29 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[16-Jan-2025 21:25:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[30-Jan-2025 07:40:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[20-Feb-2025 10:51:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[31-Mar-2025 14:32:54 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[22-Apr-2025 02:51:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[06-Jun-2025 15:40:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[06-Jun-2025 15:40:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41
+[10-Aug-2025 22:44:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function eregi() in /home2/tombesso/public_html/shows/moulin/show.php:41
+Stack trace:
+#0 {main}
+  thrown in /home2/tombesso/public_html/shows/moulin/show.php on line 41

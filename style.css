@@ -1,0 +1,11 @@
+A:link { color: #FFFFFF }       /* unvisited link */
+A:visited { color: #CCCCCC }   /* visited links */
+A:active { color: #CCCCCC }    /* active links */
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	scrollbar-base-color: #000000;
+	scrollbar-arrow-color: #C0C0C0;
+	scrollbar-darkshadow-color: #808080;
+	scrollbar-face-color: #000000;
+}

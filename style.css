@@ -1,11 +1,109 @@
-A:link { color: #FFFFFF }       /* unvisited link */
-A:visited { color: #CCCCCC }   /* visited links */
-A:active { color: #CCCCCC }    /* active links */
-body {
-	background-color: #000000;
-	color: #FFFFFF;
-	scrollbar-base-color: #000000;
-	scrollbar-arrow-color: #C0C0C0;
-	scrollbar-darkshadow-color: #808080;
-	scrollbar-face-color: #000000;
-}
+A:link { color: #FFFFFF }       /* unvisited link */
+
+A:visited { color: #CCCCCC }   /* visited links */
+
+A:active { color: #CCCCCC }    /* active links */
+
+body {
+
+	background-color: #000000;
+
+	color: #FFFFFF;
+
+	scrollbar-base-color: #000000;
+
+	scrollbar-arrow-color: #C0C0C0;
+
+	scrollbar-darkshadow-color: #808080;
+
+	scrollbar-face-color: #000000;
+
+}
+
+.exhibits-container {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.exhibitions-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.exhibitions-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.exhibitions-list li strong {
+    display: block;
+    font-size: 1.1em;
+}
+
+.exhibitions-list li em {
+    font-style: italic;
+    color: #CCC;
+}
+
+.reviews-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reviews-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.reviews-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.reviews-list li strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.bio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bio-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.translator {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bio-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
